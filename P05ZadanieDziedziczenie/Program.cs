@@ -19,7 +19,7 @@ namespace P05ZadanieDziedziczenie
                 p.Zapisz();
 
 
-            Raport r = new Raport();
+           // Raport r = new Raport();
 
             Raport r2 = new PlikHTML();
         }
