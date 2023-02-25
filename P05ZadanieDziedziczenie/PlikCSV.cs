@@ -18,7 +18,7 @@ namespace P05ZadanieDziedziczenie
         public override void Zapisz()
         {
             Tresc = Tresc.Replace(" ", ";");
-            File.WriteAllText(Sciezka + Rozszerzenie, Tresc);
+            base.Zapisz();
         }
     }
 }
