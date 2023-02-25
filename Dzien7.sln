@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01PetlaForeach", "P01Petla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02DynamiczneGenerowanieKontrolek", "P02DynamiczneGenerowanieKontrolek\P02DynamiczneGenerowanieKontrolek.csproj", "{04883B31-4A2C-4185-A48F-BBAC9D9D7509}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03Dziedziczenie", "P03Dziedziczenie\P03Dziedziczenie.csproj", "{5FF13900-1184-4567-A050-B2CDC79CF409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04Dziedziczenie", "P04Dziedziczenie\P04Dziedziczenie.csproj", "{933A5731-B34D-4317-AAC0-76D31DB72BA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{04883B31-4A2C-4185-A48F-BBAC9D9D7509}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04883B31-4A2C-4185-A48F-BBAC9D9D7509}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04883B31-4A2C-4185-A48F-BBAC9D9D7509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF13900-1184-4567-A050-B2CDC79CF409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF13900-1184-4567-A050-B2CDC79CF409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF13900-1184-4567-A050-B2CDC79CF409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF13900-1184-4567-A050-B2CDC79CF409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{933A5731-B34D-4317-AAC0-76D31DB72BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{933A5731-B34D-4317-AAC0-76D31DB72BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{933A5731-B34D-4317-AAC0-76D31DB72BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{933A5731-B34D-4317-AAC0-76D31DB72BA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

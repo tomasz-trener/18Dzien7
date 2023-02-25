@@ -1,0 +1,25 @@
+Wersja podstawowa:
+Tworzysz program do generowania raportów w
+postaci plików : .CSV, .HTML, .SQL
+Ka¿dy z plików posiada zawartoœæ (treœæ), rozmiar, autora, sciezka
+Ka¿dy z plików to powinna byæ osobna klasa.
+Ka¿dy z plików posiada tak¿e metodê: „Zapisz”, która zapisuje
+plik na dysk w miejsce œcie¿ki (w³asnej). Plik na dysk zostaje zapisany
+z w³aœciwym rozszerzeniem. Tj. HTML ma rozszerzenie .HTML itd..
+Zawartoœæ pliku tak¿e mo¿e byæ ró¿na ró¿na.
+Stworz klasy szczegó³owe i ogólne korzystaj¹c z dziedziczenia
+Stworz przykladowych 5 plikow html, 4 csv i 3 SQL
+Nastpenie umiesc wszystkie pliki w kolekcji i zapisz na dysk kazdy plikw petli
+
+
+Wersja Rozszerzona:
+ka¿dy plik formatuje zawartoœæ w odpowiedni dla siebie sposób czli:
+np plik HTML wygeneruje zawartoœæ: 
+<html>
+<body>
+<p>Ala ma kota</p>
+</body>
+</html>
+plik CSV wygeneruje zawartoœc : ala;ma;kota
+plik SQL wygeneruje SELECT ala ma kota FROM dane
+zak³adaj¹c , ¿e zawaroœæ ka¿dego pliku to "ala ma kota"
