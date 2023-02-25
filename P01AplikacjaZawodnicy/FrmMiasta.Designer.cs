@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lbDane = new System.Windows.Forms.ListBox();
             this.txtNazwaMiasta = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,6 +39,8 @@
             this.btnEdytuj = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTemperatura = new System.Windows.Forms.TextBox();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbDane
@@ -110,11 +115,28 @@
             this.txtTemperatura.Size = new System.Drawing.Size(43, 20);
             this.txtTemperatura.TabIndex = 7;
             // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(414, 13);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(280, 172);
+            this.chart1.TabIndex = 8;
+            this.chart1.Text = "chart1";
+            // 
             // FrmMiasta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 195);
+            this.ClientSize = new System.Drawing.Size(807, 264);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.txtTemperatura);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnEdytuj);
@@ -125,6 +147,7 @@
             this.Controls.Add(this.lbDane);
             this.Name = "FrmMiasta";
             this.Text = "FrmMiasta";
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +163,6 @@
         private System.Windows.Forms.Button btnEdytuj;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTemperatura;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
