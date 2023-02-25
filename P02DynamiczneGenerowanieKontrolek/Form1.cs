@@ -38,20 +38,30 @@ namespace P02DynamiczneGenerowanieKontrolek
                 {
                     Button b = new Button();
                     b.Name = "btnPrzycisk_" + w+"_"+k;
-                    b.Text = liczby.ToString(); ;
+                    //b.Text = liczby.ToString() ;
+                    b.Text = "x";
+                    //b.BackColor
+                    b.Tag = liczby;
+
                     b.Width = 50;
                     b.Height = 50;
                     b.Top = 20 + w * (20 + b.Height);
                     b.Left = 20 + k * (20+ b.Width);
+                    b.Click += new System.EventHandler(this.btnPrzycisk_Click);
                     pnlObszarGry.Controls.Add(b);
 
                     liczby++;
                 }
-            }
+            } 
+        }
 
+        private void btnPrzycisk_Click(object sender, EventArgs e)
+        {
+            Button kliknety =  (Button)sender;
+            int a = (int)kliknety.Tag;
+            kliknety.Text = Convert.ToString(a);
 
-            
-            
+            //MessageBox.Show("hej");
         }
     }
 }
